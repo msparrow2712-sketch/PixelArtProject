@@ -1,13 +1,8 @@
-// Select color input
-// Select size input
-
 const sizePicker = document.getElementById("sizePicker");
 const inputHeight = document.getElementById("inputHeight");
 const inputWidth = document.getElementById("inputWidth");
 const colorPicker = document.getElementById("colorPicker");
 const pixelCanvas = document.getElementById("pixelCanvas");
-
-// When size is submitted by the user, call makeGrid()
 
 sizePicker.addEventListener("submit", function(event) {
 	event.preventDefault();
@@ -36,7 +31,4 @@ function makeGrid() {
 		
 		pixelCanvas.appendChild(row);
 	}
-
-// Your code goes here!
-
 }
