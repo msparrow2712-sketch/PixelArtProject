@@ -16,10 +16,10 @@ function makeGrid() {
 	const height = Number(inputHeight.value);
 	const width = Number(inputWidth.value);
 	
-	for (const n = 0; n < height; n++) {
+	for (let n = 0; n < height; n++) {
 		const row = document.createElement("tr");
 		
-		for (const m = 0; m < width; m++) {
+		for (let m = 0; m < width; m++) {
 			const column = document.createElement("td");
 			
 			column.addEventListener("click", function() {
